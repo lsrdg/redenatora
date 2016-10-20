@@ -23,4 +23,4 @@ paginate:         5
 # Custom vars
 version:          1.0.1
 
-repo:             git@gitlab.com:redenatora/redenatora.gitlab.io.git
+repo:             git@gitlab.com:redenatora/redenatora.gitlab.io.git/
