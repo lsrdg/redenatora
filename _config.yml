@@ -1,27 +1,25 @@
-# Plugins
-gems:             ['jekyll-paginate', 'jekyll-gist', 'jekyll-github-metadata']
-
-
-
 # Dependencies
-highlighter:      rouge
+markdown:         kramdown 
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
+relative_permalinks: true
 
 # Setup
-title:            Rede na tora
-tagline:          Black Theme for Jekyll
-description:      "A two-column black theme with a scrolling sidebar. Ideal for sites requiring a master-detail layout, e.g. documentation, cheatsheets, lyrics, notes..."
-url:              "https://redenatora.gitlab.io/"
-baseurl:          "/" 
+title:            Hyde
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              https://redenatora.gitlab.io
+baseurl:          /
 
 author:
-  name:           'Karlo Espiritu'
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
 
 paginate:         5
 
 # Custom vars
-version:          1.0.1
+version:          2.1.0
 
-repo:             https://gitlab.com/redenatora/redenatora.gitlab.io/
+repo:          https://gitlab.com/redenatora/redenatora.gitlab.io
