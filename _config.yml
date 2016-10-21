@@ -1,5 +1,7 @@
 # Plugins
-gems:             ['jekyll-paginate', 'jekyll-gist']
+gems:             ['jekyll-paginate', 'jekyll-gist', 'jekyll-github-metadata']
+
+
 
 # Dependencies
 highlighter:      rouge
