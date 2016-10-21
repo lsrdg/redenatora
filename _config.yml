@@ -12,11 +12,10 @@ title:            BlackDoc
 tagline:          Black Theme for Jekyll
 description:      "A two-column black theme with a scrolling sidebar. Ideal for sites requiring a master-detail layout, e.g. documentation, cheatsheets, lyrics, notes..."
 url:              "https://redenatora.gitlab.io/"
-baseurl:          "/" 
+baseurl:          "https://redenatora.gitlab.io/" 
 
 author:
   name:           'Karlo Espiritu'
-  url:            https://twitter.com/karloespiritu
 
 paginate:         5
 
