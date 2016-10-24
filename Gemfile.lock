@@ -40,10 +40,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  colorator
   jekyll (= 3.3.0)
   jekyll-paginate
   kramdown
   listen (= 3.0.8)
+  rouge
 
 BUNDLED WITH
    1.13.6

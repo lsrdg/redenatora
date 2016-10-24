@@ -1,9 +1,12 @@
 # Plugins
-gems:             ['jekyll-paginate', 'kramdown'] 
+gems:             ['jekyll-paginate', 'kramdown', 'rouge'] 
 
 
 markdown: kramdown 
-exclude: ["README.md"]       
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Permalinks
 permalink:        pretty
