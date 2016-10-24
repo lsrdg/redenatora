@@ -3,7 +3,7 @@ layout: post
 date: 2016-10-11 15:33:27 +02:00
 title: "jekyll multilingue"
 
-categorias: multilingue
+categories: multilingue
 tags: jekyll
 ---
 
