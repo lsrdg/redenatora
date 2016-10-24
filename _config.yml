@@ -1,28 +1,30 @@
 # Plugins
-gems:             ['jekyll-paginate'] 
+gems:             ['jekyll-paginate', 'kramdown'] 
 
-# Dependencies
-highlighter:      rouge
+
+markdown: kramdown 
+exclude: ["README.md"]       
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            BlackDoc
-tagline:          Black Theme for Jekyll
-description:      "A two-column black theme with a scrolling sidebar. Ideal for sites requiring a master-detail layout, e.g. documentation, cheatsheets, lyrics, notes..."
+title:            Rede na tora 
+tagline:          Natoralmente conectando 
+description:      "...o que aconteceria se alguém não-técnico se aventurasse ao uso não passivo da internet?"
 #url:            'https://redenatora.gitlab.io/' 
 baseurl:        '/'
 
 
 author:
-  name:           'Karlo Espiritu'
+  name:           'e.r.a'
   #  url:            https://twitter.com/karloespiritu
 
-paginate:         5
+paginate:         7
 
 # Custom vars
 version:          1.0.1
+
 
 gitlab:
   repo:           https://gitlab.com/redenatora/redenatora.gitlab.io/
