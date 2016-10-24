@@ -17,7 +17,7 @@ Além desses dois itens, precisei adicionar um a mais (`class`), para poder trab
 ### Seletor de línguas
 todas as páginas/posts ganharam essas tres linhas a mais no `front matter`:
 
-```
+```yaml
 ---
 lang: português
 class: pt
@@ -25,28 +25,29 @@ ref: home
 ---
 ```
 
-- `lang` refere ao nome da língua *na língua*, é usado para nomear o menu por exemplo (`{{ page.lang }}`
 - `class` é usado para aplicar uma classe de CSS (`{{ page.class }}`)
 - `ref` serve para identificar as páginas traduzidas.
 
 Para criar o menu de línguas, basta inserir o seguinte código (proposto por Sylvain Durand):
 
-```
-<ul>
-{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-{% for post in posts %}
+
+
+```liquid
+   <ul>
+ <!-- {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+  {% for post in posts %}
   <li>
     <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
   </li>
-{% endfor %}
+  {% endfor %}
 
-{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-{% for page in pages %}
+  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+  {% for page in pages %}
   <li>
     <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
   </li>
-{% endfor %}
-</ul>
+  {% endfor %}
+   </ul> -->
 ```
 
 Porém, troquei `{{ page.lang }}` dentro das classes, substituindo por
@@ -78,22 +79,22 @@ E o atributo `class` também passa sem problemas, já que ele vira apenas `class
 #### O HTML final
 fica mais ou menos assim:
 
-```liquid
-<ul>
-{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-{% for post in posts %}
-  <li>
-    <a href="{{ post.url }}" class="{{ post.class }}">{{ post.lang }}</a>
-  </li>
-{% endfor %}
+``` liquid
+	<ul>
+	{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+	{% for post in posts %}
+	<li>
+	<a href="{{ post.url }}" class="{{ post.class }}">{{ post.lang }}</a>
+	</li>
+	{% endfor %}
 
-{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-{% for page in pages %}
-  <li>
-    <a href="{{ page.url }}" class="{{ page.class }}">{{ page.lang }}</a>
-  </li>
-{% endfor %}
-</ul>
+	{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+	{% for page in pages %}
+	<li>
+	<a href="{{ page.url }}" class="{{ page.class }}">{{ page.lang }}</a>
+	</li>
+	{% endfor %}
+	</ul>
 ```
 
 #### E CSS final
@@ -112,7 +113,7 @@ Exatamente como Sylvain Durand segeriu. o/
 Para construir o menu da página, ele sugere adicionar ao `_config.yml`
 algo mais ou menos assim:
 
-``` yml
+``` yaml
 t:
   en:
     home:
@@ -140,32 +141,33 @@ Esse arquivo usa a mesma estrutura proposta por Chris no [código do tema
 Starving Artis](https://github.com/chrisanthropic/starving-artist-jekyll-theme/blob/master/_data/nav.yml), adicionando o `t: en:` proposto no tutorial de Sylvain,
 mas com os nomes completos de cada língua:
 
+
 ```yaml
 
-t:
-  english:      
-    - title: "home"
-      href: "/home/"
-  
-    - title: "blog"
-      href: "/blog/"
+	t:
+	  english:      
+	    - title: "home"
+	      href: "/home/"
+	  
+	    - title: "blog"
+	      href: "/blog/"
 
-    - title: "categories"
-      subcategories:
-        - subtitle: "category1"
-          subhref: "/category1/"
-  
-  português:      
-    - title: "home"
-      href: "/home-pt/"
-  
-    - title: "blog"
-      href: "/blog-pt/"
+	    - title: "categories"
+	      subcategories:
+		- subtitle: "category1"
+		  subhref: "/category1/"
+	  
+	  português:      
+	    - title: "home"
+	      href: "/home-pt/"
+	  
+	    - title: "blog"
+	      href: "/blog-pt/"
 
-    - title: "categorias"
-      subcategories:
-        - subtitle: "categoria1-pt"
-          subhref: "/categoria1-pt/"
+	    - title: "categorias"
+	      subcategories:
+		- subtitle: "categoria1-pt"
+		  subhref: "/categoria1-pt/"
 
 ```
 
@@ -182,14 +184,14 @@ o arquivo `_includes/navigation.html` - responsável pelo código do menu. Para 
 apenas o menu da língua da página, mudei essa linha no template:
 
 
-```liquid
+```
 {% for nav in site.data.nav %} {% endfor %}
 ```
 
 ...adicionando as referências do `_data/nav.yml`:
 
 
-```mais liquid
+```
 {% for nav in site.data.nav.t[page.lang] %}  {% endfor %}
 
 ```
