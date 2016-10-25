@@ -30,9 +30,8 @@ ref: home
 
 Para criar o menu de línguas, basta inserir o seguinte código (proposto por Sylvain Durand):
 
-
-
 ```liquid
+{% raw %}
    <ul>
  <!-- {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
   {% for post in posts %}
@@ -47,7 +46,8 @@ Para criar o menu de línguas, basta inserir o seguinte código (proposto por Sy
     <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
   </li>
   {% endfor %}
-   </ul> -->
+   </ul> 
+{% endraw %}
 ```
 
 Porém, troquei `{{ page.lang }}` dentro das classes, substituindo por
@@ -80,21 +80,23 @@ E o atributo `class` também passa sem problemas, já que ele vira apenas `class
 fica mais ou menos assim:
 
 ``` liquid
-	<ul>
-	{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-	{% for post in posts %}
-	<li>
-	<a href="{{ post.url }}" class="{{ post.class }}">{{ post.lang }}</a>
-	</li>
-	{% endfor %}
+{% raw %}
+<ul>
+{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+{% for post in posts %}
+<li>
+<a href="{{ post.url }}" class="{{ post.class }}">{{ post.lang }}</a>
+</li>
+{% endfor %}
 
-	{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-	{% for page in pages %}
-	<li>
-	<a href="{{ page.url }}" class="{{ page.class }}">{{ page.lang }}</a>
-	</li>
-	{% endfor %}
-	</ul>
+{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+{% for page in pages %}
+<li>
+<a href="{{ page.url }}" class="{{ page.class }}">{{ page.lang }}</a>
+</li>
+{% endfor %}
+</ul>
+{% endraw %}
 ```
 
 #### E CSS final
@@ -144,31 +146,33 @@ mas com os nomes completos de cada língua:
 
 ```yaml
 
-	t:
-	  english:      
-	    - title: "home"
-	      href: "/home/"
-	  
-	    - title: "blog"
-	      href: "/blog/"
+{% raw %}
+t:
+  english:      
+    - title: "home"
+      href: "/home/"
+  
+    - title: "blog"
+      href: "/blog/"
 
-	    - title: "categories"
-	      subcategories:
-		- subtitle: "category1"
-		  subhref: "/category1/"
-	  
-	  português:      
-	    - title: "home"
-	      href: "/home-pt/"
-	  
-	    - title: "blog"
-	      href: "/blog-pt/"
+    - title: "categories"
+      subcategories:
+	- subtitle: "category1"
+	  subhref: "/category1/"
+  
+  português:      
+    - title: "home"
+      href: "/home-pt/"
+  
+    - title: "blog"
+      href: "/blog-pt/"
 
-	    - title: "categorias"
-	      subcategories:
-		- subtitle: "categoria1-pt"
-		  subhref: "/categoria1-pt/"
+    - title: "categorias"
+      subcategories:
+	- subtitle: "categoria1-pt"
+	  subhref: "/categoria1-pt/"
 
+{% endraw %}
 ```
 
 Ao invés de usar o nome completo da língua (`lang: português`, poderia usar
@@ -184,15 +188,15 @@ o arquivo `_includes/navigation.html` - responsável pelo código do menu. Para 
 apenas o menu da língua da página, mudei essa linha no template:
 
 
-```
-{% for nav in site.data.nav %} {% endfor %}
+```liquid
+{% raw %} {% for nav in site.data.nav %} {% endraw %}
 ```
 
 ...adicionando as referências do `_data/nav.yml`:
 
 
-```
-{% for nav in site.data.nav.t[page.lang] %}  {% endfor %}
+```liquid
+{% raw %} {% for nav in site.data.nav.t[page.lang] %}  {% endraw %}
 
 ```
 
@@ -204,21 +208,21 @@ A variável `lang:` só precisa ser evitada se ela for passar como uma classe em
 CSS. Por exemplo:
 
 
-```html
-<div class="{{page.lang}}>{{page.title}}
+```liquid
+{% raw %} <div class="{{page.lang}}>{{page.title}} {% endraw %}
 ```
 
 precisaria virar:
 
 
-```html
-<div class="{{page.class}}>{{page.title}}
+```liquid
+{% raw %} <div class="{{page.class}}>{{page.title}} {% endraw %}
 ```
 
 ### Lista de posts na mesma língua
 Para listar *somente* posts na mesma língua, segui o tutorial e ~~adicionei~~
  editei a seguinte linha em `_layouts/blog.html`:
 
-```yaml
-{% assign posts=site.posts | where:"lang", page.lang %}
+```liquid
+{% raw %} {% assign posts=site.posts | where:"lang", page.lang %} {% endraw %}
 ```
