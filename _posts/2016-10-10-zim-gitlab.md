@@ -1,14 +1,11 @@
-+++
-tags = [
-]
-date = "2016-10-10T20:21:14+02:00"
-title = "zim gitlab"
-topics = [
-]
-description = ""
-draft = false
+---
+layout: post
+date: 2016-10-10 12:06:16 +02:00
+title: "Zim WikiDesktop com Gitlab"
 
-+++
+categories: wiki, git
+tags: gitlab, zimwiki
+---
 
 O Zim WikiDesktop funciona como se fosse um papel e caneta que tão sempre a mão. É só escrever o que for 
 preciso e pronto, tá salvo.

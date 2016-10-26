@@ -1,14 +1,11 @@
-+++
-draft = false
-tags = [ "permalink",
-]
-topics = [ "jekyll", 
-]
-description = ""
-date = "2016-10-13T13:40:07+02:00"
-title = "Jekyll post não encontrado"
+---
+layout: post
+date: 2016-10-13 17:19:57 +02:00
+title: "Jekyll: post não encontrado"
 
-+++
+categories: jekyll
+tags: permalink
+---
 
 Implementei a área do blog num site e tudo tava funcionando locamente (`jekyll server`).
 Mas o site não. A página do blog tava listando os posts como deveria, mas ao clicar nos 

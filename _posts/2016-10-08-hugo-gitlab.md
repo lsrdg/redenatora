@@ -7,6 +7,20 @@ categories: Gerador-de-página-estática, git
 tags: gitlab, hugo
 ---
 
+O [Hugo](http://gohugo.io/) é gerador de páginas estáticas recente, porém 
+bem documentado.
+Porém, tive uns problemas em configurar o Hugo para funcionar com as páginas
+do Gitlab. O problema não estava em nenhum dos dois, mas na minha falta de 
+leitura.
+
+Tive que ler bastante para descobrir essas respostas simples. No final, acabei
+decidindo por não usar o Hugo. Mas isso é assunto pra outro post.
+
+Mas quem quiser usar, aqui segue um passa-a-passo não tão coerente. A receita
+abaixo, responde aos problemas que fui encontrando, não necessariamente aos
+que você pode encontrar. Porém, espero que ajude, e caso tenha dúvidas, tem 
+um lugar pra deixar comentários no depois do texto. (:
+
 - criar repositorio vazio (nomedosite.gitlab.io).
 
 

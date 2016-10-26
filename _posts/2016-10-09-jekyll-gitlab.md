@@ -1,17 +1,11 @@
-+++
-draft = false
-tags = [ "jekyll",
-         "gitlab",
-]
-topics = [ 
-          "workflow"
-]
-description = "a experiência de usar essas duas ferramentas em conjunto"
-date = "2016-10-09T14:28:24+02:00"
-title = "Entendendo Jekyll & Gitlab"
+---
+layout: post
+date: 2016-10-09 14:06:16 +02:00
+title: "Entendendo Jekyll e Gitlab-pages"
 
-+++
-
+categories: Gerador-de-página-estática, git
+tags: gitlab, jekyll 
+---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan vestibulum maximus. Aliquam semper risus bibendum, vehicula ante at, vulputate nisi. Mauris vehicula enim quis mollis rhoncus. Aliquam tincidunt congue nibh. Etiam varius faucibus tincidunt. Donec maximus molestie neque eget convallis. Cras dignissim odio sed convallis convallis. Nullam venenatis augue sollicitudin, gravida dui a, placerat augue.
 
 Ut lacus libero, ultricies at mauris ut, dapibus tristique metus. Duis eu sollicitudin magna. Donec lectus odio, pretium vel elementum ac, elementum dapibus nibh. Vestibulum nec turpis sit amet justo sagittis varius. Nam cursus volutpat libero a gravida. Aliquam erat volutpat. Vivamus ut venenatis dolor. Vestibulum turpis neque, condimentum eget nisl eget, volutpat tempor mi. Nulla facilisi. Aenean blandit ultrices arcu, id auctor dui molestie eget. Cras sed purus non libero mollis feugiat. Aliquam tincidunt, magna placerat ornare cursus, ante nisl lacinia lectus, non volutpat lacus ante et arcu. Pellentesque egestas a lectus sit amet convallis.

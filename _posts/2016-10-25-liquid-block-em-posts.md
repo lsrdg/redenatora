@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2016-10-23 09:09:57 +02:00
-title: "Jekyll - postar bloco com cógigo Liquid"
+title: "Jekyll - postar bloco com código Liquid"
 
 categories: jekyll, liquid
 tags: postar codigo
@@ -23,3 +23,5 @@ O artigo propõe dois métodos para escapar do Liqud:
 == 1) tag
 Colocar o(s) código(s) dentro de  `{{ "{%" }} raw %}` e  `{{ "{%" }} endraw %}`.
 
+[Clique aqui](https://gitlab.com/redenatora/redenatora.gitlab.io/blob/master/_posts/2016-10-25-liquid-block-em-posts.md) para ver o código deste post, caso queira ver um
+exemplo na prática. (:
