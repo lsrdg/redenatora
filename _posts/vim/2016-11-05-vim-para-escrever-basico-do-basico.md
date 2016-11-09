@@ -3,8 +3,8 @@ layout: post
 date: 2016-11-05 15:19:57 +01:00
 title: "VIM para escrever - o básico do básico"
 
-categories: vim vim-para-escrever tutorial
-tags: 
+categories: vim
+tags: escrever
 ---
 
 Se você está lendo sobre um editor de texto, é provável que queira escrever algo

@@ -29,7 +29,7 @@ Sendo assim, os artigos abaixo são para pessoas que:
   {% for post in site.categories.vim %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url | prepend: site.baseurl | remove: 'vim' }}">
+      <a href="{{ post.url }}">
         {{ post.title | escape }}
       </a>
     </h1>

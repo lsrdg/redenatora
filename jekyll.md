@@ -7,7 +7,7 @@ title: Jekyll
   {% for post in site.categories.jekyll %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url | prepend: site.baseurl }}">
+      <a href="{{ post.url }}">
         {{ post.title | escape }}
       </a>
     </h1>

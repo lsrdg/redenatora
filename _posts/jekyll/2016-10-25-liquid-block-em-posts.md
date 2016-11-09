@@ -3,8 +3,8 @@ layout: post
 date: 2016-10-23 09:09:57 +02:00
 title: "Jekyll - postar bloco com código Liquid"
 
-categories: jekyll, liquid
-tags: postar codigo
+categories: jekyll
+tags: liquid
 ---
 
 Se você quiser escrever código em um post com o Jekyll, basta usar 3 apóstrofos

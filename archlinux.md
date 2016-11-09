@@ -7,7 +7,7 @@ title: Archlinux
   {% for post in site.categories.archlinux %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url | prepend: site.baseurl }}">
+      <a href="{{ post.url }}">
         {{ post.title | escape }}
       </a>
     </h1>

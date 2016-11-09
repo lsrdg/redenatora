@@ -3,8 +3,8 @@ layout: post
 date: 2016-10-11 15:33:27 +02:00
 title: "Como criar uma página multilingue com o Jekyll"
 
-categories: multilingue
-tags: jekyll
+categories: jekyll
+tags: 
 ---
 
 Baseado no tutorial do [Sylvain Durand](https://www.sylvaindurand.org/making-jekyll-multilingual/).
