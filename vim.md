@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Vim
-menu: cat
+permalink: "/vim/"
 ---
 
 Nesta página você encontra todo o material produzido *natoralmente* sobre o Vim,

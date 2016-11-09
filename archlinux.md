@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Archlinux
+permalink: "/archlinux/"
 ---
 
 <div class="posts">

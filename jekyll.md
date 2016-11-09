@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Jekyll
+permalink: "/jekyll/"
 ---
 
 <div class="posts">

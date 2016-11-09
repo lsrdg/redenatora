@@ -201,4 +201,79 @@ Cuidado para não confundir os códigos. Fiquei um bom tempo confuso porque tava
 confundindo suaíli com sueco. Caso você não saiba o código que precisa, talvez
 [isso aqui](http://www.lingoes.net/en/translator/langcode.htm) ajude.
 
+
+## Organizando as ideias
+
+Gosto de ter um lugar para fazer anotações rápidas, copiar e colar algumas 
+etc. Muita gente usa o Evernote ou algo do tipo, mas a coisa fica complicada 
+conforme a quantidade de "notas" vai aumentando.
+
+Por anos, usei o [Zim Wiki Desktop](http://zim-wiki.org/), que é um programa
+genial. Você já ouviu falar na Wikipedia? Pois então, com o Zim você cria a sua
+própria Wikipedia. Cada "nota" sua, pode ser um artigo, e você pode criar links
+entre eles (igualzinho como na Wikipedia).
+
+Mas o Zim só está disponível para Linux, e senti muita falta dele no tempo que
+fiquei sem computador. Poderia usar vários parágrafos tecendo elogios
+(merecidos) ao Zim, mas a verdade é que apesar de gostar muito da forma como ele
+organiza os dados, ele não é o que eu espero de um editor limpo de texto. 
+
+Para mim, o Zim é ótimo para entrar, colar/escrever algo rápido e voltar pro 
+garimpo na internet, mas não para entrar e ficar por lá oras escrevendo. Para
+se isolar do mundo e ter foco, prefiro o Vim. Até que tentei encontrar uma
+maneira de [melhorar o uso do Zim][git/2016/10/10/zim-gitlab/].
+
+E é claro, fui atrás de ver como solucionar esse embate direto pelo Vim.
+[Aqui](http://naperwrimo.org/wiki/index.php?title=Vim_for_Writers), além de ser
+um ótimo material de referência, estão listadas algumas possíveis soluções, como
+o plugin [Vim-notebook](https://github.com/wdicarlo/vim-notebook) e outras
+coisas. Na verdade, se procurar existem mais opções ([VimOrganizer](https://github.com/hsitz/VimOrganizer), [Vim-orgmode](https://github.com/jceb/vim-orgmode), [Vim-notes](https://github.com/xolox/vim-notes), são alguns exemplos.
+
+Entre tantas opções, por hora estou com o [Vimwiki](http://vimwiki.github.io/).
+Vimwiki é um plugin muito bem documentado e cheio de atalhos de teclado.
+
+### Vimwiki
+
+Instalei o plugin com o [Vundle](https://github.com/VundleVim/Vundle.vim).
+Bastou adicionar essa linha ao `.vimrc`:
+
+	 Plugin 'vimwiki/vimwiki'
+
+Rodar o comando do Vundle para instalar os plugins:
+
+	:PluginInstall
+
+E reiniar o Vim (ou avisar ele que tem coisa nova: `:source ~/.vimrc`).
+
+Não importa por onde você estiver, para abrir o Vimwiki, basta apertar
+`<Leader>ww` (por padrão, a tecla chamada de *leader* é a barra invertida - `\` -, então o comando é `\`+`w`+`w`).
+
+Se em modo `normal` você apertar *enter* em cima de uma paralavra, ela vira um
+link, *enter* de novo e o Vimwiki te leva para esse novo arquivo. Aperte 
+*backspace* para voltar a página anterior.
+
+Vimwiki é bem poderoso... suporta diários, listas de afazeres, dobras, multiplas
+wikis e muito mais. O grande diferencial do Vimwiki pra mim são os atalhos de
+teclado: foram bem pensados, e se você olhar na documentação (`:h
+vimwiki-mapping`) vai se surpreender com a grande quantidade de informação.
+
+Pra quem quer se divertir:
+
+| \ww | abre Vimwiki |
+| enter | cria/acessa link |
+| backspace| volta ao link anterior |
+| \wr | renomeia o arquivo atual |
+| \wd | deleta o arquivo atual |
+| shift+enter | divide a tela e acessa link |
+| control+enter | divide a tela verticalmente e acessa link |
+| tab | encontra o próximo link |
+| shift+tab | encontra o link anterior |
+
+**OBS:** *esses são os comandos padrões, e vão funcionar redondinhos caso você não
+tenha alterado os seus atalhos*
+
+Ah, antes que esqueça: toda a sua wiki pessoal fica na pasta `~/vimwiki`. Essa
+pasta pode ser sincronizada para backup (rsync, dropbox, gdrive, etc). Optei
+pelo mesmo método que descobri com [o uso do Zim][git/2016/10/10/zim-gitlab/].
+
 Por hora, ficamos por aqui. Inté.

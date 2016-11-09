@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sobre
+permalink: "/sobre/"
 ---
 
 <div class="page">
