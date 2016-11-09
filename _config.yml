@@ -17,7 +17,8 @@ permalink:        title
 # Setup
 title:            Rede na tora 
 tagline:          Natoralmente conectando 
-description:      "...o que aconteceria se alguém não-técnico se aventurasse ao uso não passivo da internet?"
+description:      "...ou o que acontece quando uma pessoa normal se pendura na rede..."
+
 #url:            'https://redenatora.gitlab.io/' 
 baseurl:        '/'
 
