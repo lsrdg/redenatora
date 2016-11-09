@@ -12,7 +12,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # Permalinks
-permalink:        pretty
+permalink:        title
 
 # Setup
 title:            Rede na tora 
@@ -21,15 +21,13 @@ description:      "...o que aconteceria se alguém não-técnico se aventurasse 
 #url:            'https://redenatora.gitlab.io/' 
 baseurl:        '/'
 
-
 author:
   name:           'e.r.a'
-  #  url:            https://twitter.com/karloespiritu
 
-paginate:         7
+paginate:         15
 
 # Custom vars
-version:          1.0.1
+version:          0.0.1
 
 
 gitlab:

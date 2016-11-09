@@ -1,19 +1,19 @@
 ---
-layout: default
-title: Home
+layout: page
+title: Archlinux
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.categories.archlinux %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url | remove_first: '/'}}">
-        {{ post.title }}
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title | escape }}
       </a>
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
-    {{ post.excerpt }}
+
   </div>
   {% endfor %}
 </div>

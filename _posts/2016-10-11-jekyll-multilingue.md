@@ -226,3 +226,50 @@ Para listar *somente* posts na mesma língua, segui o tutorial e ~~adicionei~~
 ```liquid
 {% raw %} {% assign posts=site.posts | where:"lang", page.lang %} {% endraw %}
 ```
+
+### Banner para a página principal da língua
+*atualização/novembro*
+
+Reparei que o banner do site estava sempre direcionando para o `index.html`.
+Isso quer dizer que ao clicar no banner, ao invés de ir para a página principal
+(em relação a língua), o usuário iria para a página principal (`index.html`).
+
+Neste caso, o `index.html` está em inglês. Se o usuário passa um bom tempo lendo
+os arquivos em português, e de repente decide ir para a página principal em
+português, a única maneira seria:
+
+	- clicar no banner (ir para `index.html` em inglês)
+	- escolher `português` na barra de idiomas
+
+Isso acontece porque usando esse formato, o link `português` vai levar a página
+em português **referente a página atual**, e não para a página principal.
+
+Tentei várias formas, mas não conseguir resolver. No final, o jeito foi criar o
+arquivo `_data/home.yml`:
+
+```yml
+
+t:
+  english:
+    - href: "/"
+
+  português:
+    - href: "/pt/"
+
+  dansk:
+    - href: "/da/"
+
+```
+
+E editar o `_includes/header.html`, adicionando um `for`, no mesmo esquema usado
+para compor o menu:
+
+```liquid 
+{% raw %}
+	{% for home in site.data.home.t[page.lang] %}
+
+	<a href="{{ home.href }}"><img src="{{ page.header }}" alt="{{ site.title }} banner image" title="{{ site.title }} banner image" class="center"></a>
+
+	{% endfor %}
+{% endraw %}
+```

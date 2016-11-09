@@ -3,7 +3,7 @@ layout: post
 date: 2016-10-09 17:19:57 +02:00
 title: "Archlinux com em teclado japonês"
 
-categories: linux
+categories: archlinux
 tags: archlinux, ibus, anthy, teclado, japonês
 ---
 

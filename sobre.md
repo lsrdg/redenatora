@@ -1,8 +1,11 @@
 ---
-layout: page
-title: About
+layout: default
+title: Sobre
 ---
 
+<div class="page">
+  <h1 class="page-title">Conheça o projeto</h1>
+</div>
 <p class="message">
   Hi there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>

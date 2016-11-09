@@ -107,6 +107,18 @@ blockquote {
   border-left: .25rem solid #333;
 }
 
+.reading-time {
+  text-align: right;
+  float: right;
+  background-color: #3A3A3A;
+  color: #F7D615;
+  font-style: italic;
+  font-size: 30px;
+  margin: 3px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
 td,
 th {
   padding: .25rem .5rem;
