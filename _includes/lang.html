@@ -1,0 +1,12 @@
+<span class="lang">
+
+	<ul>
+		{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+		{% for post in posts %}
+		  <li>
+			      <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+			        </li>
+				{% endfor %}
+
+	</ul>
+</span>
