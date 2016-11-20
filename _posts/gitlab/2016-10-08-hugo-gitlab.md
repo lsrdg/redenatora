@@ -2,6 +2,7 @@
 layout: post
 date: 2016-10-08 12:06:16 +02:00
 title: "Criar uma página estática com Gitlab-pages e Hugo"
+comments: true
 
 categories: Gerador-de-página-estática, git
 tags: gitlab, hugo

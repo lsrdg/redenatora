@@ -3,6 +3,7 @@ layout: post
 date: 2016-11-05 15:19:57 +01:00
 title: "VIM para escrever - o básico do básico"
 
+comments: true
 categories: vim
 tags: escrever
 ---

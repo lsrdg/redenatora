@@ -2,6 +2,7 @@
 layout: post
 date: 2016-10-31 13:40:57 +01:00
 title: "Vim para escrever - criando um ambiente para escrever"
+comments: true
 
 categories: vim
 tags: 

@@ -2,6 +2,7 @@
 layout: post
 date: 2016-11-02 12:19:57 +01:00
 title: "Archlinux - Pacman erro: ttf-dejavu "
+comments: true
 
 categories: archlinux
 tags: pacman error

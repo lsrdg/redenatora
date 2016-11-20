@@ -2,6 +2,7 @@
 layout: post
 date: 2016-10-10 12:06:16 +02:00
 title: "Zim WikiDesktop com Gitlab"
+comments: true
 
 categories: git
 tags: gitlab, zimwiki

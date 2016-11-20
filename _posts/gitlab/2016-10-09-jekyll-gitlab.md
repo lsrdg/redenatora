@@ -2,6 +2,7 @@
 layout: post
 date: 2016-10-09 14:06:16 +02:00
 title: "Entendendo Jekyll e Gitlab-pages"
+comments: true
 
 categories: Gerador-de-página-estática, git
 tags: gitlab, jekyll 

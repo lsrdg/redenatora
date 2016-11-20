@@ -19,7 +19,7 @@ title:            Rede na tora
 tagline:          Natoralmente conectando 
 description:      "...ou o que acontece quando uma pessoa normal se pendura na rede..."
 
-#url:            'https://redenatora.gitlab.io/' 
+url:            'https://redenatora.gitlab.io/' 
 baseurl:        '/'
 
 author:

@@ -2,6 +2,7 @@
 layout: post
 date: 2016-10-23 09:09:57 +02:00
 title: "Jekyll - postar bloco com código Liquid"
+comments: true
 
 categories: jekyll
 tags: liquid

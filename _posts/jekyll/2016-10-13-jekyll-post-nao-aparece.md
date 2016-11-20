@@ -2,6 +2,7 @@
 layout: post
 date: 2016-10-13 17:19:57 +02:00
 title: "Jekyll: post não encontrado"
+comments: true
 
 categories: jekyll
 tags: permalink
