@@ -2,7 +2,7 @@
 layout: post
 date: 2016-11-20 14:19:57 +01:00
 title: "Openbox + Conky + Stalonetray"
-
+comments: true
 categories: 
 tags: 
 ---

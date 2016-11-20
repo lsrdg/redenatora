@@ -3,6 +3,7 @@ layout: post
 date: 2016-10-13 14:14:13 +02:00
 title: "Aprendendo a desenhar páginas adaptáveis"
 
+comments: true
 categories: css, desenho adaptável, framework
 tags: responsivebp
 ---

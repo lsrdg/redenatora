@@ -3,6 +3,7 @@ layout: post
 date: 2016-11-14 22:14:13 +02:00
 title: "Neovim no Archlinux"
 
+comments: true
 categories: archlinux
 tags: neovim
 ---
