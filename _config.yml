@@ -25,7 +25,7 @@ baseurl:        '/'
 author:
   name:           'e.r.a'
 
-paginate:         15
+paginate:         20
 
 # Custom vars
 version:          0.0.1
