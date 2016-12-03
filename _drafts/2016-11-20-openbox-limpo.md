@@ -3,6 +3,7 @@ layout: post
 date: 2016-11-20 14:19:57 +01:00
 title: "Openbox + Conky + Stalonetray"
 
+comments: true
 categories: 
 tags: 
 ---
@@ -53,11 +54,11 @@ arsenal de ferramentas (mostrando dados do uso e abuso do computador).
 Era bem tentador ter aquele monte de números e gráficos bem ali na tela. É uma
 boa forma de entender como que o seu computador funciona, o que ele se dá bem ou
 não. Mas a busca era por um ambiente livre de distrações e com o mínimo de
-coisas inúteirs ou semiúteis possível.
+coisas inúteis ou semiúteis possível.
 
 Se você não acredita no poder do Conky, [aqui você pode ter uma
 ideia](http://londonali1010.deviantart.com/art/Conky-Widgets-Script-141963883) do que é
-possível. Basicamente, com o Conky é possível estilisar e do jeito que for
+possível. Basicamente, com o Conky é possível estilizar e do jeito que for
 preciso as informações que você quer que apareçam na tela.
 
 Na imagem abaixo você ver o relógio e de um medidor de bateria (canto direito

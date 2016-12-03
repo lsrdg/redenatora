@@ -3,6 +3,7 @@ layout: post
 date: 2016-12-02 09:19:57 +01:00
 title: "Linha de comando no estilo Vi"
 
+comments: true
 categories: vim
 tags: 
 ---
