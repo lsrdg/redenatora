@@ -18,7 +18,7 @@ Por isso, venho lendo bastante sobre como o Vim é utilizado para compor.
 Admito que fico surpreso com quantidade de detalhes que vejo sendo discutidos 
 por aí. Por hora não preciso de tanto, só algumas coisas:
 
-## Gojo - Ambiente livre de distrações
+## Goyo - Ambiente livre de distrações
 
 O [Goyo](https://github.com/junegunn/goyo.vim) é um plugin que cria um ambiente
 livre de distrações para o Vim. Não é nada demais, ele apenas adiciona uma
