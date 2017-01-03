@@ -1,5 +1,5 @@
-Cycle buffers	|	C-left/right
-
+Cycle buffers	|	C-x left/right
+Kill buffer	|	C-x k
 -----------------------------
 # Orgmode
 http://orgmode.org/worg/org-tutorials/org4beginners.html
@@ -31,4 +31,5 @@ Cursor setas	|	C-p
 
 -----------------------------
 Palavras	|	M-f/b
-Linhas
+Frases		|	C-a/e
+Linha extrem	|	C-a/e
