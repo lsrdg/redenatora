@@ -14,7 +14,7 @@ Por hora, o projeto não está sendo divulgado e contém muitas inconsistências
 você sem querer chegou aqui (sei lá como), e tem alguma dúvida sugestão crítica
 etc, será um prazer escutar o que você tem a dizer.
 
-Todo o conteúdo *criado* por mim está sob Copyleft. Confira os links acima para
-saber mais sobre a licensa do Gitlab, Jekyll BlackDoc.
+Todo o conteúdo *criado por mim* está sob Copyleft. Confira os links acima para
+saber mais sobre a licensa do Gitlab, Jekyll e BlackDoc.
 
 No mais, divirta-se! Por uma rede com menos mão beijada.
