@@ -23,3 +23,6 @@ precisar  sair do Vim ou Neovim).
 ### Chamando o Netrw
 
 ### Usar um gerenciador de arquivos externo
+
+## Grep
+    Ao invés de abrir um arquivo, usar o grep e pular para o arquivo
