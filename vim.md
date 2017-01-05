@@ -26,13 +26,13 @@ Sendo assim, os artigos abaixo são para pessoas que:
 * estão dispostas a sair da área de conforto
 
 <div class="posts">
-  {% for post in site.categories.vim %}
+  {% for post in site.tags.vim %}
   <div class="post">
-    <h1 class="post-title">
+    <h2 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title | escape }}
       </a>
-    </h1>
+    </h2>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
