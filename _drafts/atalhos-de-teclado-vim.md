@@ -12,11 +12,11 @@ Ao usar o Vim, você tá sempre com o teclado por perto. Tudo pode ser atingido
 pelo teclado, e por isso, uma  das coisas mais importantes para otimizar ainda
 mais o ritmo de trabalho são os atalhos de teclado.
 
-Calma! É **fácil** remapear o teclado dentro do Vim. A ideia por traz disso é
+Calma! É fácil remapear o teclado dentro do Vim. A ideia por traz disso é
 bem simples e direta. Porém... 
 
 No começo eu até tinha medo. Parecia que a resposta de para qualquer dúvida
-terminava em "...aí basta mapear F5 pra fazer isso". Massa, não? Aí vinha o
+terminava em "...aí basta mapear F5 pra fazer isso". Simples, não? Então vinha o
 comando; pra mapear o tal do F5, era "só" adicionar isso ao tal do `.vimrc`:
 
 ```
@@ -24,20 +24,37 @@ nmap <F5> :0r _drafts/base.md<CR>/+<CR>i<C-r>=strftime('%F %T ')<CR><ESC>/"<CR>:
 ```
 
 Olhando pra um troço desses, a única coisa que eu entendia era que tinha um `F5`
-ali no começo e até avistei um `ESC` ali pelo final. Mas o ponto que importa é
-que com poucas teclas o Vim pode executar comandos bem extensos.
+ali no começo e até avistei um `ESC` ali pelo final. Mas o que importa aqui é
+que com poucas teclas o Vim pode executar comandos bem complexos.
 
 ## A estrutura para mapear
 
 Vamos criar um exemplo bem simples, e só pra ilustrar a ideia: vamos remapear
 `a` para `b`, toda vez que você apertar a letra a vai aparecer a letra b.
+
 ```
 :imap a b
 ```
-Na primeira parte do comando (`imap`), você diz o que você quer ('i'map = mapear alguma
-coisa. O `i` (em 'imap') diz que você quer que esse mapeamento seja só para o
-modo de inserção. No modo normal, o `a` vai continuar com a função original
-(de entrar no modo de inserção a direita do cursor).
+
+Pronto. Entre no modo de inserção e aperta a tecla `a` e você verá a letra
+`b` aparecendo.
+
+Agora vamos ver como que funciona o remapear de teclas no Vim. O comando para
+remapear é divido em três partes:
+
+**1a parte**
+
+Na primeira parte do comando (`imap`), você diz o que você quer mapear alguma
+coisa. Essa primeira parte sempre será alguma coisa com "map". No caso acima `[i]map`. 
+
+O `i` (em 'imap') diz que você quer que esse mapeamento seja só para o
+modo de inserção, e não vai afetar outros modos. No modo normal, o `a` vai continuar com a função original (de entrar no modo de inserção a direita do cursor).
+
+No nosso exemplo, usamos `imap` para criar um mapa exclusivo para o modo de
+inserção. Outras possibilidades, seriam por exemplo usar `nmap` - um mapa para o
+modo [**n**]ormal, e `vmap` - um mapa para o modo [**v**]isual.
+
+**2a parte**
 
 Na segunda parte do comando (`a`), você diz qual tecla que você quer mapear;
 neste caso, a tecla `a`.
@@ -128,7 +145,7 @@ Ao mapear um atalho, dizemos ao Vim exatamente como faríamos. Se eu fosse usar 
 comando `:set tw=80` eu terminaria apertando **enter**, e na língua do Vim isso
 quer dizer `<CR>`.
 
-### Sério?
+#### Sério?
 
 Pode parecer contra intuitivo, mas isso abre caminho para várias outras
 possibilidades. Alguma vez você se viu fazendo uma tarefa repetitiva? Além de
@@ -157,9 +174,33 @@ O título, a data e categoria mudam de post para post, mas no geral é um saco t
 que escrever as mesmas coisas toda vez. No início, eu iria copiar o cabeçalho de
 um post que já existia e mudar as informações.
 
-Hoje, simplesmente aperto `\p` e o Vim insere na tela o cabeçalho, com a data e
+Hoje, simplesmente aperto `,p` e o Vim insere na tela o cabeçalho, com a data e
 a hora certas (ufa!), todos campos em branco, prontos para receber a informação
 pertinente ao post em questão, e já com o cursor - em modo de inserção - entre
 as aspas do título. o/
 
+#### Mudar a tecla líder
 
+Nos primeiros dois meses com o Vim a minha tecla líder era `\` que veio por
+padrão. Vi pela internet que muitos usavam outras teclas como `,` ou a tecla de
+`espaço`. Achei que era besteira e aprendi a usar a barra invertida.
+
+O problema é que no dia a dia uso vários teclados diferentes e a a barra
+invertida fica em lugares diferentes... ou seja, a coisa começou a ficar
+complicada depois de um certo tempo.
+
+Vamos ao que interessa, para testar uma outra tecla líder, `,` ao invés de `\`:
+
+```
+:let mapleader = ","
+```
+Se quiser testar a tecla de `espaço`:
+
+```
+:let mapleader = "<space>"
+```
+
+A tecla de espaço faz um barulho muito chato aqui computador velhinho. Portanto,
+acabei optando por usar a vírgula. Para configurar uma tecla líder
+permanentemente, adicione o comando anterior ao seu `.vimrc` (sem os dois
+pontos do início do comando).

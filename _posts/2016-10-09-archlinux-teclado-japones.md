@@ -63,3 +63,9 @@ Adicionar as seguintes linhas ~/.bashrc :
 	export QT_IM_MODULE=ibus
 
 Se ainda não der certo, mover essas linhas para ~/.xprofile ou ~/.xinitrc
+
+
+## Atualização!
+
+Depois que o teclado em japonês começou a funcionar (além de usar), comecei a
+adicionar outros teclados ao Ibus. 
