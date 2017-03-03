@@ -1,5 +1,5 @@
 # Plugins
-gems:             ['jekyll-paginate', 'kramdown', 'rouge'] 
+gems:             ['jekyll-paginate', 'kramdown', 'rouge', 'jekyll-seo-tag'] 
 
 
 markdown: kramdown 
