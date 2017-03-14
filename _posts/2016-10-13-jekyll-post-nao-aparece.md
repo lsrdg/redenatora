@@ -8,7 +8,7 @@ categories: jekyll
 tags: permalink
 ---
 
-Implementei a área do blog num site e tudo tava funcionando locamente (`jekyll server`).
+Implementei a área do blog num site e tudo tava funcionando localmente (`jekyll server`).
 Mas o site não. A página do blog tava listando os posts como deveria, mas ao clicar nos 
 posts dava página não encontrada.
 

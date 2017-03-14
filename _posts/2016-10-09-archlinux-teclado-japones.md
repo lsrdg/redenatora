@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2016-10-09 17:19:57 +02:00
-title: "Archlinux com em teclado japonês"
+title: "Archlinux com teclado japonês"
 comments: true
 
 categories: archlinux
