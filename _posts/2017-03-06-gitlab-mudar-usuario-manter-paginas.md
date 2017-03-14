@@ -9,7 +9,6 @@ tags: gitlab
 ---
 
 
-## Mudar o nome de usuário
 Entre nas configurações do usuário:
 [gitlab.com/profile](https://gitlab.com/profile), ou clique na sua imagem no
 canto direito superior, e em seguida clique em `settings`.
