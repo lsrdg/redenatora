@@ -64,10 +64,18 @@ Adicionar as seguintes linhas ~/.bashrc :
 	export XMODIFIERS=@im=ibus
 	export QT_IM_MODULE=ibus
 
-Se ainda não der certo, mover essas linhas para ~/.xprofile ou ~/.xinitrc
-
+Se ainda não der certo, mover essas linhas para ~/.xprofile ou ~/.xinitrc. (Ver
+atualização abaixo).
 
 ## Atualização!
 
 Depois que o teclado em japonês começou a funcionar (além de usar), comecei a
 adicionar outros teclados ao Ibus. 
+
+Para iniciar automaticamente o Ibus no Openbox, adicionei a seguinte linha ao
+`~/.config/openbox/autostart`: `ibus-daemon -drx &`
+
+Por causa de um [problema com o
+anki](anki-pyqt4-archlinux/) adicionei as flags `-drx` no comando acima e
+adicionei as três linhas da sessão acima ((...e se não
+funcionar)[#se-não-funcionar]) ao `.bashrc`.
