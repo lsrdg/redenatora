@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2016-10-09 17:19:57 +02:00
-title: "Archlinux com teclado japonês"
+title: "Archlinux com teclado em japonês"
 comments: true
 
 categories: archlinux
@@ -10,7 +10,6 @@ tags: archlinux, ibus, anthy, teclado, japonês
 
 Este artigo é só para me lembrar a não me esquecer sobre como colocar o teclado em japonês.
 Principalmente, pra não fazer besteira ao implementar novas configurações.
-
 
 Depois de semanas fazendo coisas desnecessárias (UIM) e erradas, descobri um ponto que tava atrasando tudo:
 
@@ -31,10 +30,12 @@ Em seguida, instalei uma [fonte para línguas asiáticas](https://wiki.archlinux
 
 Então, ficou assim:
 
-### 1 - Instalar pacotes
+## Instalar pacotes
+
 	$ sudo pacman -S ibus-qt ibus-anthy
 
-### 2 - Instalar fonte
+## Instalar fonte
+
 Instalei a fonte ttf-mplus do AUR:
 
 	$ git clone https://aur.archlinux.org/ttf-mplus.git
@@ -42,20 +43,21 @@ Instalei a fonte ttf-mplus do AUR:
 	$ vim PKGBUILD    // para conferir a integridade do pacote
 	$ makepkg -sri    // para construir o pacote
 
-### 3 - Configurar o Ibus
+## Configurar o Ibus
 Iniciar o daemon do Ibus (com o usuário que vai usar):
 
 	$ ibus-setup
 
 Vai aparecer uma caixa, e é só escolher o que for necessário.
 
-### 4 - Adicionar como fonte de entrada
+## Adicionar como fonte de entrada
+
 Em Configurações >> Região e Idioma >> Fonte de entrada, deve aparecer várias opções para teclado em
 Japonês, mas já que aqui estamos usando o Anthy, escolheremos:
 
 	Japonês (Anthy)
 
-### ...se não funcionar:
+## ...se não funcionar:
 Adicionar as seguintes linhas ~/.bashrc :
 	
 	export GTK_IM_MODULE=ibus
