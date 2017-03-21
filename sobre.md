@@ -8,15 +8,20 @@ permalink: "/sobre/"
   <h1 class="page-title">Conheça o projeto</h1>
 </div>
 <p class="message">
-  Hi there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Rede Na Tora é uma página experimental, que visa documentar expedições pelrede
+  à fora.
 </p>
 
-## About BlackDoc Theme
+## Explorando natoralmente
 
-Some relevant information about this project:
+Informações relevantes sobre o projeto:
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Theme based on [Poole](http://getpoole.com), the Jekyll butler, and the [Hyde](http://hyde.getpoole.com) theme
-* Ideal for sites requiring master-detail layout such as documentation, cheatsheets, lyrics, notes, etc.
-* Need a beautiful color scheme for black background? Then you will love BlackDoc theme.
+* Turbinado com [Jekyll](http://jekyllrb.com)
+* Contruído com leves modificações no tema [BlackDoc](https://github.com/karloespiritu/BlackDoc)
+* Hospedado no [Gitlab](https:gitlab.com)
+* Movido pelo fato de que aprender sem compartilhar é querer sem fazer
+* Todo o conteúdo criativo criado pelo autor do blog é de uso livre
+* O código da página está disponível tanto no
+  [Gitlab](https://gitlab.com/redenatora/redenatora.gitlab.io) quanto no
+  [Github](https://github.com/lsrdg/redenatora)
 
