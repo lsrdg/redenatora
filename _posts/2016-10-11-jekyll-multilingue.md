@@ -8,14 +8,15 @@ categories: jekyll
 tags: 
 ---
 
-Baseado no tutorial do [Sylvain Durand](https://www.sylvaindurand.org/making-jekyll-multilingual/).
+Um guia para páginas múltilíngues, baseado no tutorial do [Sylvain Durand](https://www.sylvaindurand.org/making-jekyll-multilingual/). 
 
 Algumas coisas precisaram ser adaptadas e saíram diferentes.
 O principío do método proposto por Sylvain é bem simples: indicar qual a língua da página (`lang`),
 e um identificador único (`ref`) para conectar as diferentes traduções da mesma página.
 Além desses dois itens, precisei adicionar um a mais (`class`), para poder trabalhar com CSS.
 
-### Seletor de línguas
+## Seletor de línguas
+
 todas as páginas/posts ganharam essas tres linhas a mais no `front matter`:
 
 ```yaml
@@ -77,7 +78,7 @@ acima vai passar sem problemas, já que o atributo `page.lang` não é tratado p
 E o atributo `class` também passa sem problemas, já que ele vira apenas `class: pt` ao invés de
 `class: português` (com o acento circumflexo).
 
-#### O HTML final
+### O HTML final
 fica mais ou menos assim:
 
 ``` liquid
@@ -100,7 +101,7 @@ fica mais ou menos assim:
 {% endraw %}
 ```
 
-#### E CSS final
+### E CSS final
 pode ficar assim:
 
 ```css
@@ -111,7 +112,7 @@ pode ficar assim:
 ```
 Exatamente como Sylvain Durand segeriu. o/
 
-### Menu principal
+## Menu principal
 
 Para construir o menu da página, ele sugere adicionar ao `_config.yml`
 algo mais ou menos assim:
@@ -204,7 +205,7 @@ apenas o menu da língua da página, mudei essa linha no template:
 Aqui, novamente daria no mesmo usar `page.lang` ou `page.class`, já que todas
 as páginas possuem duas referências as línguas (`lang:` e `class:`).
 
-### Resumindo
+## Resumindo
 A variável `lang:` só precisa ser evitada se ela for passar como uma classe em
 CSS. Por exemplo:
 
@@ -229,6 +230,7 @@ Para listar *somente* posts na mesma língua, segui o tutorial e ~~adicionei~~
 ```
 
 ### Banner para a página principal da língua
+
 *atualização/novembro*
 
 Reparei que o banner do site estava sempre direcionando para o `index.html`.
