@@ -8,7 +8,8 @@ permalink: "/sobre/"
   <h1 class="page-title">Conheça o projeto</h1>
 </div>
 <p class="message">
-  Rede Na Tora é uma página experimental, que visa documentar expedições pelrede
+  Rede Na Tora é uma página experimental, que visa documentar expedições pela
+  rede
   à fora.
 </p>
 
